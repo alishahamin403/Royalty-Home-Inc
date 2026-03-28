@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Royalty Home Inc. — Toronto's premier luxury home renovation company. Kitchens, bathrooms, full-home renovations across the GTA.">
+  <meta property="og:title" content="Royalty Home Inc. | Luxury Renovations Toronto">
+  <meta property="og:description" content="Crafting spaces worth living in — full-service renovation studio serving the Greater Toronto Area.">
+  <title>Royalty Home Inc. | Luxury Home Renovations Toronto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <a class="nav__logo-link" href="#hero">
+      <img src="images/logo.png" alt="Royalty Home Inc." class="nav__logo-img">
+    </a>
+    <ul class="nav__links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="btn nav__cta" data-action="open-quote">Get a Quote</button>
+    <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="nav__mobile-overlay" id="mobileOverlay">
+    <button class="nav__mobile-close" aria-label="Close menu">
+      <span></span><span></span>
+    </button>
+    <ul class="nav__mobile-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="btn btn--primary nav__mobile-cta" data-action="open-quote">Get a Quote</button>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__overline hero__animate">Toronto's Premier Renovation Studio</p>
+      <h1 class="hero__headline hero__animate">
+        Crafting Spaces<br>
+        <em>Worth Living In</em>
+      </h1>
+      <p class="hero__sub hero__animate">
+        Full-service luxury renovations across the Greater Toronto Area —<br>
+        kitchens, bathrooms, full-home transformations.
+      </p>
+      <div class="hero__actions hero__animate">
+        <a href="#portfolio" class="btn btn--primary">View Our Work</a>
+        <a href="#contact" class="btn btn--ghost">Start a Project</a>
+      </div>
+    </div>
+    <div class="hero__scroll-cue">
+      <span class="hero__scroll-text">Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SERVICES
+  ═══════════════════════════════════════════ -->
+  <section class="services section-pad" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="overline">What We Do</p>
+        <h2>Renovation Services</h2>
+        <p class="section-sub">From concept to completion, every detail handled with precision.</p>
+      </div>
+      <div class="services__grid" data-stagger>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="14" width="28" height="18" rx="0.5" stroke="#B89A5A" stroke-width="1.2"/>
+              <path d="M4 14 L18 4 L32 14" stroke="#B89A5A" stroke-width="1.2" stroke-linecap="round"/>
+              <rect x="14" y="22" width="8" height="10" stroke="#B89A5A" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <h3>Full-Home Renovations</h3>
+          <p>Complete transformations from structural to cosmetic — reimagined inside and out.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="8" width="28" height="20" rx="0.5" stroke="#B89A5A" stroke-width="1.2"/>
+              <line x1="4" y1="16" x2="32" y2="16" stroke="#B89A5A" stroke-width="1.2"/>
+              <line x1="16" y1="8" x2="16" y2="28" stroke="#B89A5A" stroke-width="1.2"/>
+              <circle cx="10" cy="12" r="1.5" fill="#B89A5A"/>
+            </svg>
+          </div>
+          <h3>Kitchen Renovations</h3>
+          <p>Custom cabinetry, stone countertops, integrated appliances, bespoke layouts.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="10" width="16" height="18" rx="0.5" stroke="#B89A5A" stroke-width="1.2"/>
+              <path d="M22 16 L30 16 L30 28 L22 28" stroke="#B89A5A" stroke-width="1.2"/>
+              <circle cx="14" cy="30" r="2" stroke="#B89A5A" stroke-width="1.2"/>
+              <line x1="6" y1="30" x2="30" y2="30" stroke="#B89A5A" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <h3>Bathroom Remodeling</h3>
+          <p>Spa-inspired retreats with premium tile work, fixtures, and custom vanities.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="4" y1="28" x2="32" y2="28" stroke="#B89A5A" stroke-width="1.2"/>
+              <rect x="4" y="22" width="7" height="6" stroke="#B89A5A" stroke-width="1.2"/>
+              <rect x="11" y="22" width="7" height="6" stroke="#B89A5A" stroke-width="1.2"/>
+              <rect x="18" y="22" width="7" height="6" stroke="#B89A5A" stroke-width="1.2"/>
+              <rect x="25" y="22" width="7" height="6" stroke="#B89A5A" stroke-width="1.2"/>
+              <line x1="4" y1="22" x2="32" y2="22" stroke="#B89A5A" stroke-width="1.2"/>
+              <line x1="4" y1="16" x2="32" y2="16" stroke="#B89A5A" stroke-width="0.8" stroke-dasharray="2 2"/>
+            </svg>
+          </div>
+          <h3>Hardwood &amp; Flooring</h3>
+          <p>Engineered hardwood, luxury vinyl, and natural stone — expertly installed.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="18" width="28" height="14" rx="0.5" stroke="#B89A5A" stroke-width="1.2"/>
+              <path d="M4 18 L4 8 L32 8 L32 18" stroke="#B89A5A" stroke-width="1.2"/>
+              <line x1="4" y1="8" x2="4" y2="4" stroke="#B89A5A" stroke-width="1.2"/>
+              <line x1="32" y1="8" x2="32" y2="4" stroke="#B89A5A" stroke-width="1.2"/>
+              <line x1="4" y1="4" x2="32" y2="4" stroke="#B89A5A" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <h3>Basement Finishing</h3>
+          <p>Transformed lower levels into liveable, revenue-generating living spaces.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="4" width="10" height="28" rx="0.5" stroke="#B89A5A" stroke-width="1.2"/>
+              <rect x="20" y="4" width="10" height="12" rx="0.5" stroke="#B89A5A" stroke-width="1.2"/>
+              <rect x="20" y="20" width="10" height="12" rx="0.5" stroke="#B89A5A" stroke-width="1.2"/>
+              <line x1="6" y1="18" x2="16" y2="18" stroke="#B89A5A" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <h3>Custom Millwork</h3>
+          <p>Built-in cabinetry, shelving systems, and architectural woodwork, made to measure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PORTFOLIO
+  ═══════════════════════════════════════════ -->
+  <section class="portfolio section-pad" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="overline">Our Work</p>
+        <h2>Recent Projects</h2>
+        <p class="section-sub">A selection of completed renovations across the Greater Toronto Area.</p>
+      </div>
+      <div class="portfolio__filter reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="living">Living</button>
+        <button class="filter-btn" data-filter="dining">Dining</button>
+        <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+        <button class="filter-btn" data-filter="hallway">Hallway</button>
+      </div>
+      <div class="portfolio__grid">
+        <div class="portfolio__item portfolio__item--large reveal" data-category="living">
+          <div class="portfolio__img-wrap">
+            <img src="images/c4535810_1-640x480.JPEG" alt="Living Room Renovation — Toronto" loading="eager">
+            <div class="portfolio__overlay">
+              <p class="portfolio__location">Rosedale, Toronto</p>
+              <h3 class="portfolio__title">Living Room Transformation</h3>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__item portfolio__item--right reveal" data-category="dining">
+          <div class="portfolio__img-wrap">
+            <img src="images/c4535810_12-640x480.JPEG" alt="Dining Room Renovation — Toronto" loading="lazy">
+            <div class="portfolio__overlay">
+              <p class="portfolio__location">Forest Hill, Toronto</p>
+              <h3 class="portfolio__title">Dining Room Redesign</h3>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__item portfolio__item--bottom-left reveal" data-category="kitchen">
+          <div class="portfolio__img-wrap">
+            <img src="images/c4535810_14-640x480.JPEG" alt="Kitchen Renovation — Toronto" loading="lazy">
+            <div class="portfolio__overlay">
+              <p class="portfolio__location">Leaside, Toronto</p>
+              <h3 class="portfolio__title">Luxury Kitchen Overhaul</h3>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__item portfolio__item--bottom-mid reveal" data-category="living">
+          <div class="portfolio__img-wrap">
+            <img src="images/c4535810_15-640x480.JPEG" alt="Living Room — Toronto" loading="lazy">
+            <div class="portfolio__overlay">
+              <p class="portfolio__location">The Beaches, Toronto</p>
+              <h3 class="portfolio__title">Modern Living Suite</h3>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__item portfolio__item--bottom-right reveal" data-category="hallway">
+          <div class="portfolio__img-wrap">
+            <img src="images/c4535810_16-640x480.JPEG" alt="Hallway Renovation — Toronto" loading="lazy">
+            <div class="portfolio__overlay">
+              <p class="portfolio__location">Etobicoke, Toronto</p>
+              <h3 class="portfolio__title">Entry &amp; Hallway Refresh</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════ -->
+  <section class="about section-pad" id="about">
+    <div class="container about__grid">
+      <div class="about__image-col reveal">
+        <div class="about__img-frame">
+          <img src="images/c4535810_17-640x480.JPEG" alt="Royalty Home craftsmanship — luxury kitchen detail" loading="lazy">
+          <div class="about__img-accent"></div>
+        </div>
+      </div>
+      <div class="about__text-col reveal">
+        <p class="overline">Our Story</p>
+        <h2>Toronto's Standard<br><em>for Luxury Living</em></h2>
+        <p>Founded in Toronto, Royalty Home Inc. has spent over a decade transforming residential spaces across the GTA — from Forest Hill to the Beaches, Rosedale to Etobicoke.</p>
+        <p>We believe renovation is an act of care — for the home, for the people who live in it, and for the craftsmanship that will outlast trends. Every project begins with listening, and ends with a space you'll never want to leave.</p>
+        <ul class="about__stats">
+          <li>
+            <span class="stat-number">200+</span>
+            <span class="stat-label">Projects Completed</span>
+          </li>
+          <li>
+            <span class="stat-number">12</span>
+            <span class="stat-label">Years in Toronto</span>
+          </li>
+          <li>
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Client Satisfaction</span>
+          </li>
+        </ul>
+        <a href="#contact" class="btn btn--dark">Work With Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════ -->
+  <section class="contact section-pad" id="contact">
+    <div class="container contact__grid">
+      <div class="contact__info reveal">
+        <p class="overline">Get In Touch</p>
+        <h2>Start Your<br><em>Renovation Journey</em></h2>
+        <p>We'd love to hear about your space and vision. Our team typically responds within one business day.</p>
+        <ul class="contact__details">
+          <li>
+            <span class="contact__label">Phone</span>
+            <a href="tel:+14165550100">(416) 555-0100</a>
+          </li>
+          <li>
+            <span class="contact__label">Email</span>
+            <a href="mailto:hello@royaltyhomeinc.ca">hello@royaltyhomeinc.ca</a>
+          </li>
+          <li>
+            <span class="contact__label">Location</span>
+            <span>Toronto, Ontario · GTA-wide service</span>
+          </li>
+        </ul>
+      </div>
+      <form class="contact__form reveal" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(416) 000-0000">
+          </div>
+          <div class="form-group">
+            <label for="service">Service Interested In</label>
+            <select id="service" name="service">
+              <option value="">Select a service...</option>
+              <option>Kitchen Renovation</option>
+              <option>Bathroom Remodeling</option>
+              <option>Flooring</option>
+              <option>Full-Home Renovation</option>
+              <option>Basement Finishing</option>
+              <option>Custom Millwork</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group form-group--full">
+          <label for="message">Tell Us About Your Project</label>
+          <textarea id="message" name="message" rows="5" placeholder="Describe your space, vision, and timeline..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--gold btn--full">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <img src="images/logo.png" alt="Royalty Home Inc." class="footer__logo-img">
+      <p class="footer__copy">&copy; 2025 Royalty Home Inc. &middot; Toronto, Ontario &middot; All rights reserved.</p>
+      <ul class="footer__nav">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       QUOTE WIZARD MODAL
+  ═══════════════════════════════════════════ -->
+  <div class="qw-overlay" id="quoteWizard" role="dialog" aria-modal="true" aria-label="Get a Quote">
+    <div class="qw-modal">
+
+      <!-- Left Panel: Progress -->
+      <aside class="qw-sidebar">
+        <div class="qw-sidebar__logo">
+          <img src="images/logo.png" alt="Royalty Home Inc." class="qw-sidebar__logo-img">
+        </div>
+        <nav class="qw-steps" aria-label="Wizard steps">
+          <div class="qw-step" data-step="1">
+            <div class="qw-step__bubble">1</div>
+            <div class="qw-step__label">
+              <span class="qw-step__title">Services</span>
+              <span class="qw-step__sub">What do you need?</span>
+            </div>
+          </div>
+          <div class="qw-step" data-step="2">
+            <div class="qw-step__bubble">2</div>
+            <div class="qw-step__label">
+              <span class="qw-step__title">Details</span>
+              <span class="qw-step__sub">Specific work needed</span>
+            </div>
+          </div>
+          <div class="qw-step" data-step="3">
+            <div class="qw-step__bubble">3</div>
+            <div class="qw-step__label">
+              <span class="qw-step__title">Upload Photos</span>
+              <span class="qw-step__sub">Existing conditions</span>
+            </div>
+          </div>
+          <div class="qw-step" data-step="4">
+            <div class="qw-step__bubble">4</div>
+            <div class="qw-step__label">
+              <span class="qw-step__title">Your Info</span>
+              <span class="qw-step__sub">Contact &amp; location</span>
+            </div>
+          </div>
+          <div class="qw-step" data-step="5">
+            <div class="qw-step__bubble">5</div>
+            <div class="qw-step__label">
+              <span class="qw-step__title">Estimate</span>
+              <span class="qw-step__sub">Your project cost</span>
+            </div>
+          </div>
+        </nav>
+        <p class="qw-sidebar__note">Estimates are rough ranges based on GTA market rates. Final pricing confirmed after site visit.</p>
+      </aside>
+
+      <!-- Right Panel: Content -->
+      <div class="qw-content">
+        <button class="qw-close" aria-label="Close quote wizard" id="qwClose">&times;</button>
+
+        <!-- Mobile progress bar -->
+        <div class="qw-mobile-progress">
+          <div class="qw-mobile-progress__bar" id="qwProgressBar"></div>
+        </div>
+        <div class="qw-mobile-step-label" id="qwMobileLabel">Step 1 of 5 — Services</div>
+
+        <!-- Step panels (JS shows/hides) -->
+        <div class="qw-panel" id="qwStep1">
+          <div class="qw-panel__header">
+            <p class="overline" style="color:var(--color-gold)">Step 1</p>
+            <h2 class="qw-panel__title">What can we help you with?</h2>
+            <p class="qw-panel__sub">Select one or more services — you can choose multiple.</p>
+          </div>
+          <div class="qw-categories" id="qwCategories"></div>
+          <div class="qw-actions">
+            <button class="btn btn--primary qw-next" id="qwNext1" disabled>Continue →</button>
+          </div>
+        </div>
+
+        <div class="qw-panel" id="qwStep2">
+          <div class="qw-panel__header">
+            <p class="overline" style="color:var(--color-gold)">Step 2</p>
+            <h2 class="qw-panel__title">Tell us more about the work</h2>
+            <p class="qw-panel__sub">Select everything that applies.</p>
+          </div>
+          <div class="qw-category-tabs" id="qwCategoryTabs"></div>
+          <div class="qw-subservices" id="qwSubservices"></div>
+          <div class="qw-actions">
+            <button class="btn qw-back qw-back--light" data-target="1">← Back</button>
+            <button class="btn btn--primary qw-next" id="qwNext2">Continue →</button>
+          </div>
+        </div>
+
+        <div class="qw-panel" id="qwStep3">
+          <div class="qw-panel__header">
+            <p class="overline" style="color:var(--color-gold)">Step 3</p>
+            <h2 class="qw-panel__title">Upload existing conditions</h2>
+            <p class="qw-panel__sub">Photos help us generate a 3D render of your renovated space. Emailed within 24 hrs. <em>Optional — you can skip this step.</em></p>
+          </div>
+          <div class="qw-upload" id="qwUploadZone">
+            <input type="file" id="qwFileInput" accept="image/*,.heic" multiple hidden>
+            <div class="qw-upload__icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M20 28V12M13 19l7-7 7 7" stroke="#B89A5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="4" y="4" width="32" height="32" rx="2" stroke="#E0DEDA" stroke-width="1.2"/></svg>
+            </div>
+            <p class="qw-upload__label">Drag &amp; drop photos here</p>
+            <p class="qw-upload__hint">or <button class="qw-upload__browse" id="qwBrowse">browse files</button> · JPG, PNG, HEIC · max 10 photos</p>
+          </div>
+          <div class="qw-thumbnails" id="qwThumbnails"></div>
+          <div class="qw-actions">
+            <button class="btn qw-back qw-back--light" data-target="2">← Back</button>
+            <button class="btn btn--primary qw-next" id="qwNext3">Continue →</button>
+            <button class="btn qw-skip" id="qwSkip3">Skip this step</button>
+          </div>
+        </div>
+
+        <div class="qw-panel" id="qwStep4">
+          <div class="qw-panel__header">
+            <p class="overline" style="color:var(--color-gold)">Step 4</p>
+            <h2 class="qw-panel__title">Your contact &amp; location</h2>
+            <p class="qw-panel__sub">We use your postal code to refine your estimate for your area.</p>
+          </div>
+          <div class="qw-form" id="qwContactForm">
+            <div class="qw-form__row">
+              <div class="qw-form__group">
+                <label for="qwName">Full Name <span class="req">*</span></label>
+                <input type="text" id="qwName" placeholder="Jane Smith" autocomplete="name">
+              </div>
+              <div class="qw-form__group">
+                <label for="qwEmail">Email Address <span class="req">*</span></label>
+                <input type="email" id="qwEmail" placeholder="jane@example.com" autocomplete="email">
+              </div>
+            </div>
+            <div class="qw-form__row">
+              <div class="qw-form__group">
+                <label for="qwPhone">Phone Number</label>
+                <input type="tel" id="qwPhone" placeholder="(416) 000-0000" autocomplete="tel">
+              </div>
+              <div class="qw-form__group">
+                <label for="qwPostal">Postal Code <span class="req">*</span></label>
+                <input type="text" id="qwPostal" placeholder="M5V 3A1" maxlength="7" autocomplete="postal-code">
+              </div>
+            </div>
+          </div>
+          <div class="qw-actions">
+            <button class="btn qw-back qw-back--light" data-target="3">← Back</button>
+            <button class="btn btn--primary qw-next" id="qwNext4">View My Estimate →</button>
+          </div>
+        </div>
+
+        <div class="qw-panel" id="qwStep5">
+          <div class="qw-panel__header">
+            <p class="overline" style="color:var(--color-gold)">Step 5</p>
+            <h2 class="qw-panel__title">Your project estimate</h2>
+            <p class="qw-panel__sub">Based on GTA market rates. Final pricing confirmed after a free site visit.</p>
+          </div>
+          <div class="qw-estimate" id="qwEstimate"></div>
+          <div class="qw-render-card">
+            <div class="qw-render-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#B89A5A" stroke-width="1.2"/><path d="M12 7v5l3 3" stroke="#B89A5A" stroke-width="1.2" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <p class="qw-render-card__title">3D Render Request Submitted</p>
+              <p class="qw-render-card__sub">Our team will process your photos and email a rendered preview of your renovated space within 24 hours.</p>
+            </div>
+          </div>
+          <div class="qw-actions qw-actions--col">
+            <button class="btn btn--primary qw-submit" id="qwSubmit">Submit &amp; Get Detailed Quote</button>
+            <button class="btn qw-back qw-back--light" data-target="4">← Adjust Info</button>
+          </div>
+          <!-- Thank you state (hidden until submit) -->
+          <div class="qw-thankyou" id="qwThankyou">
+            <div class="qw-thankyou__icon">✓</div>
+            <h3>Thank you!</h3>
+            <p>We've received your quote request and will be in touch within one business day.</p>
+            <button class="btn btn--primary" id="qwDone">Close</button>
+          </div>
+        </div>
+
+      </div><!-- /qw-content -->
+    </div><!-- /qw-modal -->
+  </div><!-- /qw-overlay -->
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
